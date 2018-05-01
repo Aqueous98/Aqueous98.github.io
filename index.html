@@ -2,15 +2,50 @@
 <html>
   <head>
       <style>
+          body {background-color: aqua;}
           h1 {text-align: center;}
-          p {text-align: center;}
+          h2 {text-align: center;}
+          div {text-align: center; border-width: 5px; border-style:solid; background-color: aliceblue; margin-left: 200px; margin-right: 200px;}
+          ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              background-color: #333;
+          }
+
+          li {
+              float: left;
+          }
+
+          li a {
+            display: inline-block;
+              color: white;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+          }
+
+          li a:hover {
+              background-color: #111;
+          }
+
+          .active {
+              background-color: blue;
+          }
       </style>
-    <h1>My Design Manifesto and Portfolio</h1>
-      <p>Michael Collins</p>
-      <p>Welcome to my final project! Below are the links to the separate pieces of this project. To the left is my design manifesto, and to the right is the portfolio of all my projects from this term.</p>
-      <a href="manifesto.html" style="position: relative; left: 500px;font-size: 200%;">Manifesto</a>
-      <a href="portfolio.html" style="position: relative; left: 750px; font-size: 200%;">Portfolio</a>
   </head>
   <body>
+      <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="manifesto.html">Manifesto</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+      </ul>
+      <h1>My Design Manifesto and Portfolio</h1>
+      <h2>Michael Collins</h2>
+      <div>
+          <p>Welcome to my final project! Above are the links to the separate pieces of this project. Simply navigate through the tabs to get wherver you would like.</p>
+          <p>I am a sophomore Computer Science major at Worcester Polytechnic University. I enjoy coding, gaming, and performing music in WPI's Concert Band. Overall, I enjoyed this course, and was able to put my experience with Javascript and other types of programming to good use for the projects.</p>
+      </div>
   </body>
 </html>
